@@ -26,6 +26,6 @@
 
  You also can create new one and then Log in.
 
- Used Locale storage, is not persistent…        
-
+ Used Locale storage.
+ Is not persistent…        
  Users and Cards are mocked, they are loaded from json datai when program is started.
