@@ -25,6 +25,8 @@
  Pass : 123456
 
  You also can create new one and then Log in.
+ 
+ tested only with chrome.
 
  Used Locale storage.
  Is not persistent…        
