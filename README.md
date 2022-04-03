@@ -12,6 +12,12 @@
  Installed on local machine
  Node v14.15.0
  npm@6.14.8
+ 
+ 
+ after all this are installed clone repo and run following commands in terminal
+ 
+ 1 npm install
+ 2 ionic serve
 
  Test user 
 
