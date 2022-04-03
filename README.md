@@ -14,7 +14,7 @@
  npm@6.14.8
  
  
- after all this are installed clone repo and run following commands in terminal
+ after all this are installed and run following commands in terminal
  
  1. npm install
  2. ionic serve
