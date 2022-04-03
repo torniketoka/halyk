@@ -3,10 +3,10 @@
  Go to Terminal and type ionic	
  We need version 6.19.0
 
- If ionic is installed and version is older 
- First delete ionic 
+ If ionic is installed and version is older, first delete ionic 
  npm uninstall -g ionic
- After install 
+ 
+ after install 
  npm install -g @ionic/cli
 
  Installed on local machine
@@ -14,7 +14,7 @@
  npm@6.14.8
  
  
- after all this are installed and run following commands in terminal
+ after all this are installed, import project in Idea and run following commands in terminal
  
  1. npm install
  2. ionic serve
