@@ -16,8 +16,8 @@
  
  after all this are installed clone repo and run following commands in terminal
  
- 1 npm install
- 2 ionic serve
+ 1. npm install
+ 2. ionic serve
 
  Test user 
 
