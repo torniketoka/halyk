@@ -1,0 +1,22 @@
+  <ion-row class="loginrow">
+    <form class="loginform" [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+      <ion-item lines="full">
+        <ion-label position="floating">Name</ion-label>
+        <ion-input formControlName="name" type="text" required></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input formControlName="password" type="password" required appIntegerInput placeholder="only digits allowed"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" expand="block">{{ 'halyk.loginText' | translate }}</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+         <ion-text>{{ 'halyk.loginHint' | translate }}</ion-text>
+        </ion-col>
+      </ion-row>
+    </form>
+</ion-row>

@@ -1,0 +1,14 @@
+{
+    "halyk": {
+      "loginHint": "Wenn Sie noch kein Konto haben, registrieren Sie sich bitte",
+      "loginText": "Einloggen",
+      "registerText": "Registrieren",
+      "welcomText": "Danke, dass Sie unseren Service nutzen",
+      "welcomHeader": "Willkommen",
+      "accountHeader": "Meine Konten",
+      "accountTypeFirst": "Mitarbeiter",
+      "accountTypeSecond": "Spar",
+      "accountTypeThird": "Besondere",
+      "logout": "Ausloggen"
+    }
+}

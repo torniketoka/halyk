@@ -1,0 +1,7 @@
+{
+    "cards": [
+        {"name": "employee", "iban": "AT611904300234573201", "amount": "4.500"},
+        {"name": "savings", "iban": "AT611904300234573202", "amount": "7.000"},
+        {"name": "special", "iban": "AT611904300234573203", "amount": "1.000"}
+    ]
+}

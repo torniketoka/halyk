@@ -1,0 +1,21 @@
+<ion-row class="loginrow">
+  <form class="loginform" [formGroup]="registerForm" (ngSubmit)="submitForm()" novalidate>
+    <ion-item lines="full">
+      <ion-label position="floating">Name</ion-label>
+      <ion-input formControlName="registerName" type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input formControlName="registerPassword" type="password" required appIntegerInput placeholder="only digits allowed"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input formControlName="registerEmail" type="email" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" expand="block">{{ 'halyk.registerText' | translate }}</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-row>

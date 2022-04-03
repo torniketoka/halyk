@@ -1,0 +1,77 @@
+.welcomeCard {
+border-top: 3px solid #3880ff;
+height: 80px; 
+}
+
+.logoutText {
+margin-top: 8px;
+font-weight: bold;
+float: right;
+margin-right: 6px;
+}
+
+.logoutTime {
+font-size: 16px;
+}
+
+.timerBox {
+padding-top: 20px;
+}
+
+.logoutButton {
+float: right;
+}
+
+.home-row-reverse{
+flex-wrap: wrap-reverse;
+}
+
+.welcomeText {
+font-size: 17px;
+margin-left: 10px;
+margin-right: 10px;
+color: cadetblue;
+font-weight: bold;
+}
+
+.textSize {
+    font-size: 16px;
+}
+
+.cardColor {
+font-weight: bold;
+color: cadetblue;
+}
+
+.appName{
+margin-top: 10px;
+}
+
+.amountColor {
+font-weight: bold;
+color: green;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+.textSize {
+font-size: 14px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.textSize {
+font-size: 11px;
+}
+}
+
+@media screen and (max-width: 350px) {
+.appName{
+font-size: 14px;
+margin-top: 10px;
+}
+}
+
+.timerIcon {
+font-size: 30px;
+color: #3880ff;
+}

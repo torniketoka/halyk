@@ -1,0 +1,32 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay" [hidden]='(isLoggedIn | async)'>
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-list-header>Halyk</ion-list-header>
+          <ion-note>halyk-app</ion-note>
+
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label *ngIf="p.title==='Login'">{{ 'halyk.loginText' | translate }}</ion-label>
+              <ion-label *ngIf="p.title==='Register'">{{ 'halyk.registerText' | translate }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-row class="languageButtons">
+              <ion-text class="languageText">Select Language</ion-text>
+              <ion-segment (ionChange)="segmentChanged($event)" mode="ios">
+                <ion-segment-button value="en" class="segmentButtonColor">
+                  <ion-label>English</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="de" class="segmentButtonColor">
+                  <ion-label>German</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+          </ion-row>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

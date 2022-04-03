@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size-xs="4" size-md="6" size-lg="6"><ion-title class="appName">Halyk</ion-title></ion-col>
+      <ion-col size-xs="8" size-md="6" size-lg="6">
+        <div>
+          <ion-button class="logoutButton" (click)="logout()">{{'halyk.logout' | translate }}</ion-button>
+          <ion-text class="logoutText"><ion-icon class="timerIcon" name="hourglass-outline"></ion-icon>{{countDownTime | countDown}}</ion-text>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row class="home-row-reverse">
+    <ion-col size-xs="12" size-md="3" size-lg="3"></ion-col>
+    <ion-col size-xs="12" size-md="6" size-lg="6">
+      <ion-card class="welcomeCard">
+        <ion-row>
+         <ion-col class="welcomeText">
+           <ion-text>{{'halyk.welcomHeader' | translate }} </ion-text>
+           <ion-text>{{currentUSer}}</ion-text>
+         </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="welcomeText"> {{'halyk.welcomText' | translate }}</ion-col>
+         </ion-row>
+      </ion-card>
+    </ion-col>
+    <ion-col size-xs="12" size-md="3" size-lg="3"></ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col size-xs="12" size-md="3" size-lg="3"></ion-col>
+    <ion-col size-xs="12" size-md="6" size-lg="6">
+      <ion-card>
+        <ion-accordion-group type="ios">
+         <ion-accordion value="numbers">
+          <ion-item slot="header">
+           <ion-label>{{'halyk.accountHeader' | translate }}</ion-label>
+          </ion-item>
+  
+          <ion-list slot="content">
+           <ion-item *ngFor="let card of cards">
+             <ion-label>
+               <ion-row>
+                <ion-col size-xs="3" size-md="3" size-lg="3">
+                 <ion-text *ngIf="card.name==='employee'" class="textSize cardColor" >{{'halyk.accountTypeFirst' | translate }}</ion-text>
+                 <ion-text *ngIf="card.name==='savings'" class="textSize cardColor" >{{'halyk.accountTypeSecond' | translate }}</ion-text>       
+                 <ion-text *ngIf="card.name==='special'" class="textSize cardColor" >{{'halyk.accountTypeThird' | translate }}</ion-text>   
+                </ion-col>
+                <ion-col size-xs="6" size-md="7" size-lg="7">
+                  <ion-text class="textSize cardColor" prettyIban>{{card.iban | prettyIban}}</ion-text>
+                 </ion-col>
+                 <ion-col size-xs="2" size-md="2" size-lg="2">
+                  <ion-text class="textSize amountColor">{{card.amount}}</ion-text>
+                 </ion-col>
+               </ion-row>
+              </ion-label>
+           </ion-item>
+         </ion-list>
+
+        </ion-accordion>
+       </ion-accordion-group>
+      </ion-card>
+    </ion-col>
+    <ion-col size-xs="12" size-md="3" size-lg="3"></ion-col>
+  </ion-row>
+</ion-content>
